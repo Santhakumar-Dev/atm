@@ -1,0 +1,25 @@
+
+
+1. Open command prompt from the location where POM.xml is copied to.
+2. Run the command 
+
+	mvn clean package
+	
+	This would compile the source and generate the required package (war file in this case)
+	
+3. Run the below
+
+	mvn jetty:run
+	
+	This will start the application with jetty plugin
+	
+4. The application can be accessed with the URL
+
+	http://localhost:8080/atm
+	
+5. Below are the Rest endpoints
+
+	/initialise/initialiseRepository
+	/initialise/deposit
+	/report/availableNotes
+	/withdraw/withdrawAmount
